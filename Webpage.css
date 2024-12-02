@@ -31,10 +31,10 @@ img {
   height: 250px;
   
 }
-/* .logo img {
+.logo img {
   width: 200px;
   height: auto;
-} */
+}
 
 .navigation {
   display: flex;
@@ -150,7 +150,7 @@ footer a:hover {
   .navigation {
       display:none;
       justify-content: center;
-      /* background-color:black; */
+      background-color:black;
        position: relative;
       /* top: 70px;
       right: 0;
