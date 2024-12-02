@@ -1,0 +1,189 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://static.vecteezy.com/system/resources/thumbnails/026/901/852/small_2x/ai-generated-ai-generative-mist-magic-fog-night-dark-forest-tree-jungle-landscape-background-scary-nature-outdoor-adventure-explore-travel-vibe-style-graphic-art-photo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  
+}
+/* .logo img {
+  width: 200px;
+  height: auto;
+} */
+
+.navigation {
+  display: flex;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #f0a500;
+}
+
+/* Mobile Toggle Bar */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f0a500;
+}
+
+section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+section form input,
+section form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+section form button {
+  padding: 10px 20px;
+  background-color: #f0a500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+section form button:hover {
+  background-color: #fff;
+  color: #f0a500;
+}
+
+/* Footer Styles */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f0a500;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* .navigation ul{
+    display: none;
+  } */
+  .navigation {
+      display:none;
+      justify-content: center;
+      /* background-color:black; */
+       position: relative;
+      /* top: 70px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;  */
+  }
+
+  .navigation.active {
+      display: flex;
+  }
+
+  .menu-icon {
+      display: flex;
+  }
+
+  .navigation ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  section h2 {
+      font-size: 1.5rem;
+  }
+
+  section p {
+      font-size: 0.9rem;
+  }
+
+  section form input,
+  section form textarea {
+      width: 90%;
+  }
+}
+  
+
