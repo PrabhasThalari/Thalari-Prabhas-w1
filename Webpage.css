@@ -144,19 +144,18 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  /* .navigation ul{
-    display: none;
-  } */
   .navigation {
       display:none;
-      justify-content: center;
-      background-color:black;
+      justify-content: end;
+      background-color:transition;
        position: relative;
-      /* top: 70px;
+
+       
+      /* top: 70px; */
       right: 0;
       width: 100%;
-      text-align: center;
-      padding: 20px 0;  */
+      /* text-align: center; */
+      padding: 20px 0;
   }
 
   .navigation.active {
